@@ -1,0 +1,182 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+	<Title>{% block title %}{% endblock %}</Title>
+	<link rel="stylesheet" href="static\afi_web\style.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+	<link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Roboto'/>
+	<script src="static\afi_web\script.js"></script>
+</head>
+<body>
+	<div class="NavBar">
+		<ul>
+			<div class="Nav_left">
+				<li style="display: inline;">logo</li>
+				<li style="display: inline;">
+					<input type="image" src="static\afi_web\menu.png" onclick="menu()" style="width: 2%; height: 2%;"/>
+				</li>
+			</div>
+			<div class="Nav_right">
+				<li style="display: inline;">What We Are</li>
+				<li style="display: inline;">What We Do</li>
+				<li style="display: inline; padding-right: 30px;">Contuct Us</li>
+				<li style="display: inline;">Language</li>
+			</div>
+		</ul>
+	</div>
+	<div class="menuLayout" id="menu">
+		<div class="menuLeft">
+			<ul>
+				<div>
+					<li style="display: inline;">What We Are</li>
+					<li style="display: inline;">
+						<input type="image" src="static\afi_web\menu.png" onclick="wwAre()" style="width: 2%; height: 2%;"/>
+					</li>
+						<ul id="whatweare" style="display: none;">
+							<li onclick="menupage(this.id)" id="overview">Overview</li>
+							<li onclick="menupage(this.id)" id="ourvalue">Our Value</li>
+							<li onclick="menupage(this.id)" id="ourculture">Our Culture</li>
+							<li onclick="menupage(this.id)" id="ourteam">Our Team</li>
+							<li onclick="menupage(this.id)" id="message">Message</li>
+							<li onclick="menupage(this.id)" id="whereweare">Where We Are</li>
+						</ul>
+				</div>
+				<div>
+					<li style="display: inline;">What We Do</li>
+					<li style="display: inline;">
+						<input type="image" src="static\afi_web\menu.png" onclick="wwDo()" style="width: 2%; height: 2%;"/>
+					</li>
+						<ul id="whatwedo" style="display: none;">
+							<li>Overview</li>
+							<li onclick="menupage(this.id)" id="development">Development</li>
+							<li onclick="menupage(this.id)" id="investment">Investment</li>
+							<li onclick="menupage(this.id)" id="consulting">Consulting</li>
+							<li onclick="menupage(this.id)" id="epc">EPC</li>
+							<li onclick="menupage(this.id)" id="onm">O&M</li>
+							<li onclick="menupage(this.id)" id="data">Data</li>
+						</ul>
+				</div>
+				<div>
+					<li style="display: inline;">Contact Us</li>
+					<li style="display: inline;">
+						<input type="image" src="static\afi_web\menu.png" onclick="contactUs()" style="width: 2%; height: 2%;"/>
+					</li>
+						<ul id="contactus" style="display: none;">
+							<li onclick="menupage(this.id)" id="recruitment">Recruitment</li>
+							<li onclick="menupage(this.id)" id="whereweare">Where We Are</li>
+						</ul>
+				</div>
+			</ul>
+		</div>
+		<div class="menuRight">
+			<div class="menuThumbnail" id="overviewT">
+				<h4><b>About AfterFIT Indonesia</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about our company, and why<br>
+					we want to make an impact.</b></p>
+				<button onclick="document.location='overview'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="ourvalueT">
+				<h4><b>About AfterFIT Value</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about our company, and why<br>
+					we want to make an impact.</b></p>
+				<button onclick="document.location='our-value'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="ourcultureT">
+				<h4><b>Our Culture</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about our company, and why<br>
+					we want to make an impact.</b></p>
+				<button onclick="document.location='our-culture'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="ourteamT">
+				<h4><b>Our Team</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about our company, and why<br>
+					we want to make an impact.</b></p>
+				<button onclick="document.location='our-team'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="messageT">
+				<h4><b>Message</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about our company, and why<br>
+					we want to make an impact.</b></p>
+				<button onclick="document.location='our-message'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="developmentT">
+				<h4><b>Development of Solar Panel</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about AfterFit's development on the
+					creation of Solar Panels</b></p>
+				<button onclick="document.location='development'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="investmentT">
+				<h4><b>Investment of Solar Panel</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about AfterFit's invements into creating
+					the best Solar Panels.</b></p>
+				<button onclick="document.location='investment'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="consultingT">
+				<h4><b>Consulting</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about on why you should consult
+					with AfterFit's power plant business.</b></p>
+				<button onclick="document.location='consulting'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="epcT">
+				<h4><b>EPC</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about on why you should consult
+					with AfterFit's power plant business.</b></p>
+				<button onclick="document.location='epc'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="onmT">
+				<h4><b>O&M</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about on why you should consult
+					with AfterFit's power plant business.</b></p>
+				<button onclick="document.location='onm'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="dataT">
+				<h4><b>Data</b></h4>
+				<img src="" alt="AFI">
+				<p><b>More about on why you should consult
+					with AfterFit's power plant business.</b></p>
+				<button onclick="document.location='data'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="recruitmentT">
+				<h4><b>Consulting</b></h4>
+				<img src="" alt="AFI">
+				<p><b>Want to become a part of AfterFit
+					Indonesia? Check for recruitment positions.</b></p>
+				<button onclick="document.location='recruitment'">Learn More</button>
+			</div>
+			<div class="menuThumbnail" id="whereweareT">
+				<h4><b>Where We Are</b></h4>
+				<img src="" alt="AFI">
+				<p><b>Learn More About afterFit's locations, and
+					where you can contact us.</b></p>
+				<button onclick="document.location='where-we-are'">Learn More</button>
+			</div>
+		</div>
+	</div>
+	<div class="page">
+		{% block body %}
+		{% endblock %}
+	</div>
+	<div class="bottom_bar">
+		<div class="bottom_bar_up">
+			<ul>
+				<li style="display: inline;">Privacy Policy</li>
+				<li style="display: inline;">Terms and Condition</li>
+				<li style="display: inline;">Site Map</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p>&copy;2021 PT afterFIT Indonesia</p>
+		</div>
+	</div>
+</body>
