@@ -1,0 +1,20 @@
+#page26 > section.seca {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+    margin: 4rem auto 0 auto;
+    max-width: 1080px;
+
+    .btn {
+      width: 320px;
+    }
+
+    .japan {
+      margin-top: 0.25rem;
+    }
+  }
+}

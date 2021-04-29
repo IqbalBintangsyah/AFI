@@ -1,0 +1,30 @@
+<div class="NavBar">
+			<ul>
+				<div class="Nav_left">
+					<li style="display: inline;">logo</li>
+					<li style="display: inline;">
+						<input type="image" src="static\afi_web\menu.png" onclick="menu()" style="width: 2%; height: 2%;"/>
+					</li>
+				</div>
+				<div class="Nav_right">
+					<li style="display: inline;">What We Are</li>
+					<li style="display: inline;">What We Do</li>
+					<li style="display: inline; padding-right: 30px;">Contuct Us</li>
+					<li style="display: inline;">Language</li>
+				</div>
+			</ul>
+		</div>
+
+<div class="bottom_bar">
+			<div class="bottom_bar_up">
+				<ul>
+					<li style="display: inline;">Privacy Policy</li>
+					<li style="display: inline;">Terms and Condition</li>
+					<li style="display: inline;">Site Map</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>&copy;2021 PT afterFIT Indonesia</p>
+			</div>
+		</div>
+

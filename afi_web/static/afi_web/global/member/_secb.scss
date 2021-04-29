@@ -1,0 +1,31 @@
+.member > section.secb {
+  // position: relative;
+  // border: 1px solid blue;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1080px;
+    padding: 0 50px;
+    margin: 0 auto 100px auto;
+    justify-content: space-between;
+
+    .box {
+      // flex-grow: 1;
+      // text-align: center;
+
+      .title {
+        font-weight: 700;
+        display: inline-block;
+        border-bottom: 2px solid $primaryColor;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .description {
+        font-weight: 500;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

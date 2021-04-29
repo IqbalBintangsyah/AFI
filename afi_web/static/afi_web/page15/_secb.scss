@@ -1,0 +1,52 @@
+#page15 > section.secb {
+  .container {
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      width: 300px;
+      font-size: 1.2rem;
+      text-align: center;
+      border-bottom: 2px solid $primaryColor;
+      margin-bottom: 50px;
+    }
+
+    .title.ke2 {
+      width: 600px;
+    }
+
+    .title.ke3 {
+      width: 100%;
+      font-size: 1.2rem;
+      text-align: center;
+      border-bottom: none;
+      margin-bottom: 50px;
+    }
+
+    .list-box {
+      width: 100%;
+      // border: 1px solid black;
+      margin-bottom: 100px;
+
+      tr {
+        padding-bottom: 10px;
+      }
+
+      th {
+        width: 200px;
+        vertical-align: top;
+        text-align: left;
+
+        // p {
+        //   border-bottom: 2px solid $primaryColor;
+        // }
+      }
+    }
+  }
+}

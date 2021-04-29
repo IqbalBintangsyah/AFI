@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>afterFIT Indonesia</title>
+	</head>
+	<body>
+		<form action="{% url 'afi_web:index' %}" method="post">
+			{% csrf_token %}
+			{{ form }}
+			<input type="submit">
+		</form>
+	</body>
+</html>

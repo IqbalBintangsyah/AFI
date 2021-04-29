@@ -1,0 +1,27 @@
+section.breadcrumb {
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 20px 10px 20px;
+    font-size: 0.8rem;
+    flex-direction: row;
+    font-weight: 700;
+
+    .black {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .down {
+        margin-left: 4px;
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .gray {
+      color: $grayColor;
+      margin-left: 8px;
+    }
+  }
+}

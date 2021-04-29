@@ -1,7 +1,9 @@
 from django.urls import path
 from . import views
 
+app_name = "afi_web"
 urlpatterns = [
+    path("login", views.login, name="login"),
     path("", views.index, name="index"),
     path("overview", views.overview, name="overview"),
     path("our-value", views.ourValue, name="ourValue"),

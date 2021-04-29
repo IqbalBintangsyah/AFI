@@ -1,6 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django import forms
 # Create your views here.
+
+class Login(forms.Form):
+    name = forms.CharField(label="username")
+    pswd = forms.CharField(label="password")
+
+def login(request):
+	return render(request, "afi_web/login.html", {
+		"form": Login()	
+	})
 
 def index(request):
 	return render(request, "afi_web/index.html")

@@ -1,0 +1,32 @@
+footer {
+  // margin-top: 100px;
+  background-color: $primaryColor;
+  color: white;
+  font-size: 0.6rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+
+    .top {
+      display: flex;
+      flex-direction: row;
+
+      .menu {
+        // padding: 10px 0 0 0;
+        margin: 10px 10px 10px 0;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .right {
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -3,47 +3,120 @@
 	AfterFit Indonesia
 {% endblock %}
 {% block body %}
-	<ul class="breadcrumb">
-		<li>Who We Are</li>
-		<li>Our Team</li>
-	</ul>
-	<div class="cover">
-		<h1>Our Team</h1>
-	</div>
-	<div class="content">
-		<h2>We Value our Members</h2>
-		<p>Our team consists of people from various backgrounds with a
+	<section class="breadcrumb">
+		<div class="container">
+		<div class="black" role="button">
+			<div>Who We Are</div>
+			<svg
+			class="down"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+			>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="M19 9l-7 7-7-7"
+			/>
+			</svg>
+		</div>
+		<div class="gray">/ Our Team</div>
+		</div>
+	</section>
+	<main id="page18">
+		<section class="hero">
+		<h1 class="title">Our Team</h1>
+		</section>
+		<section class="seca">
+		<div class="container">
+			<div class="title">We Value our Members</div>
+			<div class="description">
+			Our team consists of people from various backgrounds with a
 			challenger mentality. Each individual are important in our
-			organization to actualize our vision and values.</p>
-	</div>
-	<div class="our_team">
-		<h2>Meet Our Team</h2>
-		<div class="team_member">
-			<img src="static\afi_web\pic\kawamura.jpg">
+			organization to actualize our vision and values.
+			</div>
 		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\nagao.jpg">
+		</section>
+		<section class="secb">
+		<div class="container">
+			<div class="title">Meet Out Team</div>
+			<div class="people-container">
+			<div class="people people-1" onclick="kawamura()">
+				<div class="img"></div>
+				<div class="description-box" onclick="">
+				<div class="name">Kawamura</div>
+				<div class="position">Director</div>
+				</div>
+			</div>
+			<div class="people people-2" onclick="nagao()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Nagao</div>
+				<div class="position">Sales Manager</div>
+				<div class="position">General Manager</div>
+				<div class="departement">Business Development Div</div>
+				</div>
+			</div>
+			<div class="people people-3" onclick="maria()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Maria</div>
+				<div class="position">Finance Manager</div>
+				<div class="position">General Manager</div>
+				<div class="departement">Administration Div</div>
+				</div>
+			</div>
+			<div class="people people-4" onclick="asep()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Asep</div>
+				<div class="position">Manager</div>
+				<div class="departement">Business Development Dept</div>
+				</div>
+			</div>
+			<div class="people people-5" onclick="andrie()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Andrie</div>
+				<div class="position">Manager</div>
+				<div class="departement">Business Development Dept</div>
+				</div>
+			</div>
+			<div class="people people-6" onclick="kemas()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Kemas</div>
+				<div class="position">Manager</div>
+				<div class="departement">Business Promotion Dept</div>
+				</div>
+			</div>
+			<div class="people people-7" onclick="wika()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Wika</div>
+				<div class="position">Manager</div>
+				<div class="departement">Legal Dept</div>
+				</div>
+			</div>
+			<div class="people people-8" onclick="rosi()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Rosi</div>
+				<div class="position">Manager</div>
+				<div class="departement">Human Resource Dept</div>
+				</div>
+			</div>
+			<div class="people people-9" onclick="ancha()">
+				<div class="img"></div>
+				<div class="description-box">
+				<div class="name">Ancha</div>
+				<div class="departement">Executive Advisor</div>
+				</div>
+			</div>
+			</div>
 		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\hirose.jpg">
-		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\asep.jpg">
-		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\andrie.jpg">
-		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\kemas.jpg">
-		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\wika.jpg">
-		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\rosi.jpg">
-		</div>
-		<div class="team_member">
-			<img src="static\afi_web\pic\mardis.jpg">
-		</div>
-	</div>
+		</section>
+	</main>
 {% endblock %}

@@ -3,18 +3,39 @@
 	AfterFit Indonesia
 {% endblock %}
 {% block body %}
-	<ul class="breadcrumb">
-		<li>Contact Us</li>
-		<li>Recruitment</li>
-	</ul>
-	<div class="cover">
-		<img src="static\afi_web\pic\contact us.jpg">
-			<div class="cover_text">
-				<h1 style="color: lime;">Contact Us</h1>
+	<section class="breadcrumb">
+		<div class="container">
+		<div class="black" role="button">
+			<div>Contact Us</div>
+			<svg
+			class="down"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+			>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="M19 9l-7 7-7-7"
+			/>
+			</svg>
+		</div>
+		<div class="gray">/ Recruitment</div>
+		</div>
+	</section>
+	<main id="page26">
+		<section class="hero">
+		<h1 class="title">Contact Us</h1>
+		</section>
+		<section class="seca">
+			<div class="container">
+				<div class="left">
+				<div role="button" class="btn">Recruitment</div>
+				</div>
+				<div role="button" class="btn">Business</div>
 			</div>
-	</div>
-	<div class="content" style="height: 100vh;">
-		<button style="border-radius: 2px; width: 230px; height: 80px; margin: 70px;">Recruitment</button>
-		<button style="border-radius: 2px; width: 230px; height: 80px; margin: 70px;">Business</button>
-	</div>
+		</section>
+	</main>
 {% endblock %}

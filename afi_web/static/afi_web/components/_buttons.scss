@@ -1,0 +1,12 @@
+.btn {
+  background-color: $primaryColor;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 150ms;
+
+  &:hover {
+    box-shadow: 0 0.25rem 1rem $primaryColorTransparent;
+  }
+}

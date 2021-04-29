@@ -1,0 +1,47 @@
+// components
+@import './components/colors';
+@import './components/fonts';
+@import './components/navbar';
+@import './components/footer';
+@import './components/toTop';
+@import './components/breadcrumb';
+@import './components/buttons';
+
+// global pages
+@import './global/member/index';
+@import './global/blog1/index';
+
+// specific pages
+@import './page15/index';
+@import './page16/index';
+@import './page17/index';
+@import './page18/index';
+@import './page26/index';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  font-family: 'Roboto';
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 150ms;
+
+  &:hover {
+    border-bottom: 2px solid currentColor;
+  }
+}

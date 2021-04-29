@@ -1,0 +1,27 @@
+.to-top {
+  display: flex;
+  position: sticky;
+  bottom: 20px;
+  flex-direction: row-reverse;
+  margin: 0 20px 20px 0;
+  z-index: 900;
+
+  .btn {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    background-color: $primaryColor;
+    border-radius: 50%;
+    right: 50px;
+    bottom: 10px;
+
+    &:hover {
+      border: none;
+    }
+  }
+  // cursor: pointer;
+
+  svg {
+    color: white;
+  }
+}

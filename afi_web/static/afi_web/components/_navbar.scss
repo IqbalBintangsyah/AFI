@@ -1,0 +1,66 @@
+header {
+  padding: 10px 50px 10px 50px;
+  border-bottom: 2px solid black;
+  z-index: 500;
+  position: sticky;
+  top: 0;
+  background: white;
+  width: 100%;
+
+  nav.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .left {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      // margin-bottom: 0px;
+
+      .logo {
+        height: 40px;
+      }
+
+      .hamburger {
+        height: 32px;
+        width: 32px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 0.6rem;
+      font-weight: 600;
+      color: black;
+
+      .menu {
+        padding: 0 10px;
+        color: black;
+        transition: all 150ms;
+
+        &:hover {
+          border: none;
+          color: $primaryColor;
+        }
+      }
+
+      .translate {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 0 40px;
+
+        img {
+          height: 16px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
